@@ -1,0 +1,188 @@
+{
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\src\\main",
+        "RESOURCES_PATH": [
+          "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "E:\\Projects\\ArkTS\\where_is_my_name\\entry\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "strictMode": {
+          "caseSensitiveCheck": true,
+          "useNormalizedOHMUrl": true
+        },
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": false,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "E:\\Projects\\ArkTS\\where_is_my_name\\build",
+    "BUNDLE_NAME": "cn.com.yuxiit.whereismyname",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "E:\\Projects\\ArkTS\\where_is_my_name\\build\\outputs\\default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "E:\\Projects\\ArkTS\\where_is_my_name\\entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "E:\\Projects\\ArkTS\\where_is_my_name"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [
+          {
+            "name": "default",
+            "type": "HarmonyOS",
+            "material": {
+              "storeFile": "E:/Projects/ArkTS/where_is_my_name/key/key.p12",
+              "storePassword": "000000306412F64A7A94DF61F3EF8A6B8B62C5E2431240371D606FCEFB671243118C9E784C9B04ED3D89906036C9934C319554BA7A1FED4719B18E79EA4B9F13",
+              "keyAlias": "Sma",
+              "keyPassword": "0000003012324729BF0699911544EA1770F09D47C58563875F980E34B934D01294338D6921F733E8FA3D13DC34EA741B76355F25D9417DA3C90EB1994EFF1112",
+              "signAlg": "SHA256withECDSA",
+              "profile": "E:/Projects/ArkTS/where_is_my_name/key/key.p7b",
+              "certpath": "E:/Projects/ArkTS/where_is_my_name/key/key.cer"
+            }
+          }
+        ],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "targetSdkVersion": "5.0.0(12)",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS",
+            "buildOption": {
+              "strictMode": {
+                "caseSensitiveCheck": true,
+                "useNormalizedOHMUrl": true
+              }
+            }
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "E:\\Projects\\ArkTS\\where_is_my_name"
+    ],
+    "BUILD_CACHE_DIR": ""
+  },
+  "version": 1
+}

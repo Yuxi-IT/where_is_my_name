@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "qr-code-generator",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "v1.7.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/nayuki/qr-code-generator",
+        "Description": "High-quality QR Code generator library in Java, TypeScript/JavaScript, Python, Rust, C++, C."
+    }
+]
